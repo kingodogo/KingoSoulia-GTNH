@@ -2,12 +2,12 @@
 
 ## For Users
 
-### Method 1: Direct URL (Recommended)
-1. Open Prism Launcher
-2. Click "Add Instance" → "Import from URL"
-3. Paste this URL: `https://raw.githubusercontent.com/Kingodogo/KingoSoulia-GTNH/main/pack.toml`
-4. Click "OK"
-5. The pack will install and auto-update!
+### Method 1: Unsup.jar Auto-Update (Recommended)
+1. **Download unsup.jar** from: https://github.com/UnsupportedMods/unsup/releases
+2. **Place unsup.jar** in your Minecraft directory
+3. **Open Prism Launcher** → "Add Instance" → "Import from URL"
+4. **Paste this URL**: `https://raw.githubusercontent.com/kingodogo/KingoSoulia-GTNH/main/pack.toml`
+5. **Click "OK"** - The pack will install and auto-update!
 
 ### Method 2: Manual Download
 1. Go to the [Releases page](https://github.com/Kingodogo/KingoSoulia-GTNH/releases)
@@ -17,22 +17,21 @@
 
 ## For Pack Maintainers
 
-### Setup Steps:
-1. Push this repository to GitHub
-2. Run `get-pack-url.bat` (Windows) or `get-pack-url.sh` (Linux/Mac) to get your pack URL
-3. Share the URL with users
-4. When you update the pack, just push to GitHub - users get updates automatically!
+### Simple Setup:
+1. **Push to GitHub** (already done!)
+2. **Share the pack URL** with users
+3. **Make changes and push** - users get updates automatically!
 
 ### Updating the Pack:
-1. Make your changes
-2. Update version in `pack.toml` if needed
-3. Run `update-pack.bat` (Windows) or `update-pack.sh` (Linux/Mac) to refresh metadata
-4. Commit and push:
+1. **Make your changes** (configs, mods, etc.)
+2. **Update version** in `pack.toml` if needed
+3. **Commit and push**:
    ```bash
    git add .
    git commit -m "Update pack"
    git push
    ```
+4. **Done!** Unsup.jar handles all the backend update logic
 
 ## Pack Information
 - **Minecraft:** 1.7.10

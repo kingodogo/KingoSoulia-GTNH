@@ -1,0 +1,10 @@
+{
+  "name": "KingoSoulia",
+  "version": "1.2.0",
+  "author": "Kingodogo",
+  "description": "KingoSoulia GTNH Modpack with auto-update support",
+  "url": "https://raw.githubusercontent.com/kingodogo/KingoSoulia-GTNH/main/pack.toml",
+  "updateUrl": "https://raw.githubusercontent.com/kingodogo/KingoSoulia-GTNH/main/pack.toml",
+  "minecraft": "1.7.10",
+  "forge": "10.13.4.1614"
+}

@@ -2,60 +2,48 @@
 
 A Minecraft 1.7.10 modpack with GregTech and various other mods.
 
-## Direct GitHub Pack URL for Prism Launcher
+## 🚀 Auto-Update with Unsup.jar
 
-This pack is configured for direct installation from GitHub using Prism Launcher's auto-pull feature.
+This pack uses **unsup.jar** for automatic updates - no complex scripts needed!
 
 ### For Pack Users
 
-**Easy Installation - Just use this URL in Prism Launcher:**
+**Easy Installation:**
 
-```
-https://raw.githubusercontent.com/Kingodogo/KingoSoulia-GTNH/main/pack.toml
-```
-
-**Steps:**
-1. Open Prism Launcher
-2. Click "Add Instance" → "Import from URL"
-3. Paste the URL above
-4. Click "OK" - Prism Launcher will automatically download and install the pack
-5. The pack will auto-update whenever you push changes to GitHub!
+1. **Download unsup.jar** from: https://github.com/UnsupportedMods/unsup/releases
+2. **Use this URL in Prism Launcher:**
+   ```
+   https://raw.githubusercontent.com/kingodogo/KingoSoulia-GTNH/main/pack.toml
+   ```
+3. **That's it!** Unsup.jar handles all updates automatically
 
 ### For Pack Maintainers
 
-#### Setting up the repository:
-
-1. **Push this repository to GitHub:**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git remote add origin https://github.com/Kingodogo/KingoSoulia-GTNH.git
-   git push -u origin main
-   ```
-
-2. **Share the pack URL:**
-   - The pack URL is already configured: `https://raw.githubusercontent.com/Kingodogo/KingoSoulia-GTNH/main/pack.toml`
-   - Share this URL with users
-
-#### Updating the pack:
-
-1. Make your changes to config files, mods, etc.
-2. Update the version in `pack.toml` if needed
-3. Commit and push to main branch:
+#### Simple Update Process:
+1. **Make your changes** (configs, mods, etc.)
+2. **Update version** in `pack.toml` if needed  
+3. **Commit and push**:
    ```bash
    git add .
-   git commit -m "Update pack configuration"
+   git commit -m "Update pack"
    git push
    ```
-4. Users' packs will automatically update when they launch Prism Launcher!
+4. **Done!** Users get updates automatically
 
-#### How it works:
+#### No Complex Setup Needed:
+- ❌ No batch files
+- ❌ No shell scripts
+- ❌ No manual hash updates
+- ✅ Just push to GitHub!
 
-- Prism Launcher reads the `pack.toml` file from your GitHub repository
-- It then downloads all files listed in `index.toml` using their raw GitHub URLs
-- When you update files and push to GitHub, users get the updates automatically
-- No manual releases needed - just push to GitHub!
+## 🎯 How Auto-Updates Work
+
+1. **User launches pack** → Unsup.jar checks GitHub
+2. **Compares versions** → If newer version available
+3. **Downloads updates** → Gets new files from GitHub  
+4. **Applies changes** → Pack is updated automatically
+
+**All handled by unsup.jar - no scripts needed!**
 
 ### Pack Information
 
