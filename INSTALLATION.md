@@ -5,12 +5,12 @@
 ### Method 1: Direct URL (Recommended)
 1. Open Prism Launcher
 2. Click "Add Instance" → "Import from URL"
-3. Paste this URL: `https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/pack.toml`
+3. Paste this URL: `https://raw.githubusercontent.com/Kingodogo/KingoSoulia-GTNH/main/pack.toml`
 4. Click "OK"
 5. The pack will install and auto-update!
 
 ### Method 2: Manual Download
-1. Go to the [Releases page](https://github.com/YOUR_USERNAME/YOUR_REPO/releases)
+1. Go to the [Releases page](https://github.com/Kingodogo/KingoSoulia-GTNH/releases)
 2. Download the latest `KingoSoulia.zip` file
 3. In Prism Launcher, click "Add Instance" → "Import from file"
 4. Select the downloaded zip file

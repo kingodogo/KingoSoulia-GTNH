@@ -11,13 +11,13 @@ This pack is configured for direct installation from GitHub using Prism Launcher
 **Easy Installation - Just use this URL in Prism Launcher:**
 
 ```
-https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/pack.toml
+https://raw.githubusercontent.com/Kingodogo/KingoSoulia-GTNH/main/pack.toml
 ```
 
 **Steps:**
 1. Open Prism Launcher
 2. Click "Add Instance" → "Import from URL"
-3. Paste the URL above (replace YOUR_USERNAME and YOUR_REPO with the actual values)
+3. Paste the URL above
 4. Click "OK" - Prism Launcher will automatically download and install the pack
 5. The pack will auto-update whenever you push changes to GitHub!
 
@@ -30,12 +30,12 @@ https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/pack.toml
    git init
    git add .
    git commit -m "Initial commit"
-   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+   git remote add origin https://github.com/Kingodogo/KingoSoulia-GTNH.git
    git push -u origin main
    ```
 
-2. **Update the pack URL:**
-   - Replace `YOUR_USERNAME` and `YOUR_REPO` in the URL above with your actual GitHub username and repository name
+2. **Share the pack URL:**
+   - The pack URL is already configured: `https://raw.githubusercontent.com/Kingodogo/KingoSoulia-GTNH/main/pack.toml`
    - Share this URL with users
 
 #### Updating the pack:
