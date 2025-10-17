@@ -1,0 +1,16 @@
+filename = 'hodgepodge-2.6.108.jar'
+name = 'Hodgepodge'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'b665fb54d162c56c45b2acb404af3c7ac33361929e17b8993aeb03e076fadfef1f9623bb91769a6747de735dc65c00e445d51c51b84da573ecccf288b4c1b44f'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/6QQe8Ldy/versions/2Nml0s55/hodgepodge-2.6.108.jar'
+
+[update.modrinth]
+mod-id = '6QQe8Ldy'
+version = '2Nml0s55'

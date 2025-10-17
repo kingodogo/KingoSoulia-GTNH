@@ -1,0 +1,16 @@
+filename = 'personalspace-1.0.33.jar'
+name = 'Personal Space'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'be6a8f434ba90274279791480875e9a5f451fbda78576fc388d6c8cc26f1358f3009235d7c0a9ddb4e5a124dc0a56ec22b9a50f075a8e4968faa7f72b7e148fb'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/ZnGlaJ2R/versions/hDWIznb1/personalspace-1.0.33.jar'
+
+[update.modrinth]
+mod-id = 'ZnGlaJ2R'
+version = 'hDWIznb1'

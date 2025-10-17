@@ -1,0 +1,16 @@
+filename = 'angelica-1.0.0-beta57.jar'
+name = 'Angelica'
+side = 'client'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'aa2f07fdcf44e320cf8f97189990a3142843c393e7a4235fd235b2ce90e71af9aef22601a7e954f3526032964bd43ac5dcbfba0b5202960e7d892155520e2a76'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/XN5jnYB4/versions/OvY4JJEn/angelica-1.0.0-beta57.jar'
+
+[update.modrinth]
+mod-id = 'XN5jnYB4'
+version = 'OvY4JJEn'

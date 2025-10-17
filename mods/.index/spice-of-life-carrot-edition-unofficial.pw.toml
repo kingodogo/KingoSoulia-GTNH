@@ -1,0 +1,16 @@
+filename = 'SpiceOfLife-2.2.3-carrot.jar'
+name = 'Spice of Life - Carrot Edition - Unofficial 1.7.10'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '85d4a8dcb4a44419c52c4354cd6c35a6a59adaf38732889e8e4a926dfa37be11324fdf442ac915d8feebd3a9771271e6f6f5b266e22a42207823ee19c63fab76'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/AbPBTO0Y/versions/xX05oPFC/SpiceOfLife-2.2.3-carrot.jar'
+
+[update.modrinth]
+mod-id = 'AbPBTO0Y'
+version = 'xX05oPFC'

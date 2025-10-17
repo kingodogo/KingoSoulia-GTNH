@@ -1,0 +1,16 @@
+filename = 'NotEnoughItems-2.7.91-GTNH.jar'
+name = 'NotEnoughItems Unofficial 1.7.10'
+side = 'client'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'bbf599ab786cd3077211e18ac089bf0dc538f2bead9493d584e8582de0bb6a4de3f4354b3d70f23b6cc4b42a2291f0555106e6c0a1c1b6fce6c730df5760a37c'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/iNPc3Onu/versions/hOnia99R/NotEnoughItems-2.7.91-GTNH.jar'
+
+[update.modrinth]
+mod-id = 'iNPc3Onu'
+version = 'hOnia99R'

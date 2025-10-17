@@ -1,0 +1,16 @@
+filename = 'IronChest-6.1.6.jar'
+name = 'Iron Chest Unofficial'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '8ef62a720acd8d194c59cc2f1ed648dc9b7312f0e68d0d0befcee9246fe93b6dd2f81bd31af27a09d7fbd0d48e4ba211421db91bbb4059980ef2919d7d0ba2aa'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/VNJFvdp5/versions/74uqsqeF/IronChest-6.1.6.jar'
+
+[update.modrinth]
+mod-id = 'VNJFvdp5'
+version = '74uqsqeF'

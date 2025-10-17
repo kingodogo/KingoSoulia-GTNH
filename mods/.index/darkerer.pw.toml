@@ -1,0 +1,16 @@
+filename = 'darkerer-1.0.6.jar'
+name = 'Darkerer'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'df303e586fd73bdac17fdba805c69fcdd9a8712819ad1d3bdd9fdfa96b54d9678d3dfd0a5e3862d543b9f0ad783086097f211bdfd057402c7d7c0cb575c9eecf'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/JOIeI9O4/versions/CEoDhg7f/darkerer-1.0.6.jar'
+
+[update.modrinth]
+mod-id = 'JOIeI9O4'
+version = 'CEoDhg7f'

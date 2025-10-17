@@ -1,0 +1,16 @@
+filename = 'BiomesOPlenty-1.7.10-2.1.0.2308-universal.jar'
+name = "Biomes O' Plenty"
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = '8161e3fef48d02e9bf84ecac9cfc1102bf21d34c2dd7834198bc77a6262b5c74f5060d966c36738b1c563390cfbcf3feb86f2406940d730f163688da1b52df1c'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/HXF82T3G/versions/YoWpRk0h/BiomesOPlenty-1.7.10-2.1.0.2308-universal.jar'
+
+[update.modrinth]
+mod-id = 'HXF82T3G'
+version = 'YoWpRk0h'
