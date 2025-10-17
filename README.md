@@ -10,12 +10,12 @@ This pack uses **unsup.jar** for automatic updates - no complex scripts needed!
 
 **Easy Installation:**
 
-1. **Download unsup.jar** from: https://github.com/UnsupportedMods/unsup/releases
-2. **Use this URL in Prism Launcher:**
-   ```
-   https://raw.githubusercontent.com/kingodogo/KingoSoulia-GTNH/main/pack.toml
-   ```
-3. **That's it!** Unsup.jar handles all updates automatically
+1. **Download the pack zip file** from: [Releases](https://github.com/kingodogo/KingoSoulia-GTNH/releases)
+2. **Import in Prism Launcher:**
+   - Open Prism Launcher
+   - Click "Add Instance" → "Import from file"
+   - Select the downloaded `KingoSoulia-Pack.zip`
+3. **That's it!** The pack will auto-update from GitHub automatically
 
 ### For Pack Maintainers
 
@@ -38,12 +38,17 @@ This pack uses **unsup.jar** for automatic updates - no complex scripts needed!
 
 ## 🎯 How Auto-Updates Work
 
-1. **User launches pack** → Unsup.jar checks GitHub
-2. **Compares versions** → If newer version available
-3. **Downloads updates** → Gets new files from GitHub  
-4. **Applies changes** → Pack is updated automatically
+1. **User imports zip** → Prism Launcher sets up instance with unsup.jar
+2. **User launches pack** → Unsup.jar checks GitHub repository
+3. **Compares versions** → If newer version available
+4. **Downloads updates** → Gets new files from GitHub using pack.toml/index.toml
+5. **Applies changes** → Pack is updated automatically
 
-**All handled by unsup.jar - no scripts needed!**
+**The zip contains:**
+- Prism Launcher configuration
+- Unsup.jar setup pointing to your GitHub repo
+- Pack metadata (pack.toml, index.toml) in the main repo directory
+- All mod files downloaded from GitHub on first launch
 
 ### Pack Information
 
