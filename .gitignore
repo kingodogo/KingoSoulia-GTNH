@@ -1,0 +1,39 @@
+# GitHub Actions
+.github/
+
+# Packwiz cache
+.packwiz/
+
+# CoreTweaks cache
+coretweaks/cache/
+coretweaks/out/
+
+# Visual Prospecting client data
+visualprospecting/client/
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Backup files
+*.bak
+*.backup

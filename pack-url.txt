@@ -1,0 +1,20 @@
+# KingoSoulia Pack - Direct GitHub URL for Prism Launcher
+
+## Pack URL for Prism Launcher:
+https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/pack.toml
+
+## How to use:
+1. Copy the URL above (replace YOUR_USERNAME and YOUR_REPO with your actual GitHub username and repository name)
+2. In Prism Launcher, go to "Add Instance" → "Import from URL"
+3. Paste the URL and click "OK"
+4. Prism Launcher will automatically download and install the pack
+
+## Example:
+If your GitHub repository is at: https://github.com/Kingodogo/KingoSoulia
+Then your pack URL would be: https://raw.githubusercontent.com/Kingodogo/KingoSoulia/main/pack.toml
+
+## Auto-Update:
+Once installed, Prism Launcher will automatically check for updates when you:
+- Push changes to your GitHub repository
+- Update the pack.toml version number
+- The pack will auto-update for users when they launch it
