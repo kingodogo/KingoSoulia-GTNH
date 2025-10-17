@@ -1,5 +1,6 @@
-# GitHub Actions
-.github/
+# GitHub Actions (keep workflows, ignore other files)
+.github/*
+!.github/workflows/
 
 # Packwiz cache
 .packwiz/
@@ -37,3 +38,6 @@ logs/
 # Backup files
 *.bak
 *.backup
+
+# Large cache files (optional - uncomment if you want to exclude them)
+# coretweaks/cache/classTransformerLite.cache

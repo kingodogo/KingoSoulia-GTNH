@@ -1,0 +1,104 @@
+name: Auto-Update Pack
+
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - 'README.md'
+      - 'INSTALLATION.md'
+      - 'pack-url.txt'
+      - '*.bat'
+      - '*.sh'
+  workflow_dispatch:
+
+jobs:
+  update-pack:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Set up Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '8'
+    
+    - name: Install packwiz
+      run: |
+        curl -sL https://github.com/packwiz/packwiz/releases/latest/download/packwiz-installer-bootstrap.jar -o packwiz-installer.jar
+        java -jar packwiz-installer.jar
+    
+    - name: Update pack metadata
+      run: |
+        echo "Refreshing pack metadata..."
+        ./packwiz refresh
+        
+        echo "Updating pack.toml hash..."
+        NEW_HASH=$(./packwiz hash index.toml)
+        echo "New hash: $NEW_HASH"
+        
+        # Update the hash in pack.toml
+        sed -i "s/hash = \".*\"/hash = \"$NEW_HASH\"/" pack.toml
+        
+        echo "Updated pack.toml with new hash"
+    
+    - name: Check for changes
+      id: changes
+      run: |
+        git add .
+        if git diff --quiet; then
+          echo "changed=false" >> $GITHUB_OUTPUT
+          echo "No changes detected"
+        else
+          echo "changed=true" >> $GITHUB_OUTPUT
+          echo "Changes detected - will commit and push"
+        fi
+    
+    - name: Commit and push changes
+      if: steps.changes.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Auto-update pack metadata - $(date)"
+        git push
+    
+    - name: Create release
+      if: steps.changes.outputs.changed == 'true'
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: "v${{ github.run_number }}-${{ github.sha }}"
+        name: "KingoSoulia Pack v${{ github.run_number }}"
+        body: |
+          ## Pack Update
+          
+          **Commit:** ${{ github.sha }}
+          **Message:** ${{ github.event.head_commit.message }}
+          **Build:** ${{ github.run_number }}
+          
+          ### Changes
+          - Updated pack metadata
+          - Refreshed mod index
+          - Pack ready for auto-update
+          
+          ### Installation
+          Use this URL in Prism Launcher for auto-updates:
+          ```
+          https://raw.githubusercontent.com/kingodogo/KingoSoulia-GTNH/main/pack.toml
+          ```
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Update pack info
+      run: |
+        echo "========================================"
+        echo "Pack update completed successfully!"
+        echo "========================================"
+        echo "Repository: https://github.com/kingodogo/KingoSoulia-GTNH"
+        echo "Pack URL: https://raw.githubusercontent.com/kingodogo/KingoSoulia-GTNH/main/pack.toml"
+        echo "Users will get updates automatically when they launch Prism Launcher!"
