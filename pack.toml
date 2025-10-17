@@ -1,0 +1,13 @@
+name = "KingoSoulia"
+author = "Kingodogo"
+version = "1.2.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "94b9a02a7eef784a407545b05696050806aa3b803da1189c28e9b72ab8ef996f"
+
+[versions]
+forge = "10.13.4.1614"
+minecraft = "1.7.10"
